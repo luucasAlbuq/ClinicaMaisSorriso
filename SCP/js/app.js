@@ -1,0 +1,1 @@
+angular.module('sorrirApp',['ui.mask','ngRoute']);

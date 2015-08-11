@@ -1,0 +1,106 @@
+ <!--main content start-->
+          <section class="wrapper">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3 class="page-header"><i class="fa fa-files-o"></i> Cadastro de Pacientes</h3>
+          <ol class="breadcrumb">
+            <li><i class="fa fa-home"></i><a href="index.html">Início</a></li>
+            <li><i class="icon_document_alt"></i>Cadastro</li>
+            <li><i class="fa fa-files-o"></i>Formulário de Cadastro de Pacientes</li>
+          </ol>
+        </div>
+      </div>
+              <!-- Form validations -->     
+              <div class="row">
+                  <div class="col-lg-12">
+                      <section class="panel">
+                          <header class="panel-heading">
+                              Informações do Paciente
+                          </header>
+                          <div class="panel-body">
+                              <div class="form">
+                                  <form name="formCadastroPaciente" class="form-validate form-horizontal" id="feedback_form" method="get" action="">
+                                        
+                                        <div class="form-group ">
+                                            <label for="cname" class="control-label col-lg-2">Nome Completo <span class="required">*</span></label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="cname" name="nomeCompleto" ng-minlength=10 type="text" ng-model="paciente.nome" required placeholder="Ex: Maria da Silve Pereira"/>
+
+                                                <ui-alert mensagem="Nome do paciente deve conter ao menos 10 caracteres." ng-show="formCadastroPaciente.$error.minlength"/>
+
+                                            </div>
+
+                                        </div>    
+                                        
+                                        <div class="form-group ">
+                                            <label for="ccpf" class="control-label col-lg-2">CPF<span class="required">*</span></label>
+                                            <div class="col-lg-10">
+                                                <input class="form-control" id="ccpf" name="cpf" 
+                                                ui-mask="999.999.999-99" size="11" type="text" 
+                                                ng-model="paciente.cpf" required />
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="form-group ">
+                                            <label for="address" class="control-label col-lg-2">Endereço <span class="required">*</span></label>
+                                            <div class="col-lg-10">
+                                              <input class=" form-control" id="address" name="address" 
+                                              ng-model="paciente.endereco" type="text" required placeholder="Ex: Rua Marieta Medeiros, 43, Centro, Itabaiana, Paraíba" />
+                                            </div>
+                                        </div>
+
+                                          <div class="form-group ">
+                                              <label for="cfone" class="control-label col-lg-2">Telefone <span class="required">*</span></label>
+                                              <div class="col-lg-10">
+                                                  <input class="form-control" type="text" name="cfone" 
+                                                  ng-model="paciente.telefone" 
+                                                  required ui-mask="(99) 9999-99999" size="10"/>
+                                              </div>
+                                          </div>
+
+                                      <div class="form-group ">
+                                          <label for="cemail" class="control-label col-lg-2">E-Mail</label>
+                                          <div class="col-lg-10">
+                                              <input class="form-control " id="cemail" 
+                                              ng-model="paciente.email" type="email" name="email" placeholder="Ex: maria@gmail.com"/>
+
+                                              <ui-alert mensagem="Informe um email válido." ng-show="formCadastroPaciente.email.$invalid"/>
+                                              
+                                          </div>
+                                      </div>
+                                                                          
+                                      <div class="form-group ">
+                                          <label for="ccomment" class="control-label col-lg-2">Observações</label>
+                                          <div class="col-lg-10">
+                                              <textarea class="form-control " id="ccomment" 
+                                              ng-model="paciente.observacao" name="comment" ></textarea>
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <div class="col-lg-offset-2 col-lg-10">
+                                              
+                                              <button class="btn btn-success " style="font-weight: bold;" 
+                                              ng-click="cadastrar(paciente,formCadastroPaciente)" type="submit">
+                                                <i class="icon_check" style="margin:2px"></i>
+                                                Salvar   
+                                              </button>
+
+                                              <button  class="btn btn-danger" style="font-weight: bold;" 
+                                              ng-click="limpar()" type="button">
+                                              <i class="icon_blocked" style="margin:2px"></i>
+                                                 Cancelar
+                                              </button>
+                                             
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+              
+              <!-- page end-->
+          </section>
+      <!--main content end-->

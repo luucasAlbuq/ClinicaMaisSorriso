@@ -1,0 +1,9 @@
+curl -X POST \ -H "Content-Type: application/json" \ -H "X-Parse-Application-Id: qBElNASWfi8xR8WNYt9KiB3rhDnKtUPH18tl9Bbv" \ -H "X-Parse-REST-API-Key: wZnKIr63dkughm2orqkU9V73JaBuMZKg4LK4CTGg" \ -d "{\"cpf\": \"451233806445\",\"dataCadastro\": {\"__type\": \"Date\",\"iso\": \"2015-07-30T18:08:00.000Z\"},\"email\": \"maria@email.com\",\"idade\": 45,\"nome\": \"Maria da Silva Costa\",\"telefone\": 83999001700}" \ https://api.parse.com/1/classes/Paciente
+
+
+
+{"cpf": "451233806445","dataCadastro": {"__type": "Date","iso": "2015-07-30T18:08:00.000Z"},"email": "maria@email.com","idade": 45,"nome": "Maria da Silva Costa","telefone": 83999001700}
+
+
+
+https://www.youtube.com/watch?v=TT_mXoxCUxM&list=PLoN_ejT35AEhbFswEKW36LxzyXJs7xCWS&index=3

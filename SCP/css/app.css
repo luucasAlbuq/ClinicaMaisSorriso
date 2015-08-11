@@ -1,0 +1,66 @@
+.table-curved {
+	border-collapse:separate;
+	border: solid #ccc 1px;
+	-moz-border-radius: 25px;
+	overflow:hidden;
+}
+
+.table-curved tr:last-child td{
+	-moz-border-bottom-left-radius: 25px;    
+	-moz-border-bottom-right-radius: 25px;   
+}
+
+.jumbotron {
+	width: 700px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color:#F0F0F0;
+}
+
+.table{
+	text-align: center;
+	width: 700px;
+	border-collapse:separate;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 20px;
+}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.footer{
+	text-align: center;
+	margin-top: 50px;
+	color:#C0C0C0; 
+}
+.cadastro{
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+}
+.form-control {
+	margin-bottom: 5px;
+}
+.selecionado{
+	background-color:  	#00FFFF;
+}
+.negrito{
+	font-weight: bold;
+}
+
+.hora-cabecalho{
+	margin-left:200px; 
+	margin-top: 7px;
+	font-size: 13px;
+	color: #BDBDBD;
+}
+
+table > thead > tr > th{
+	text-align: center;
+}
