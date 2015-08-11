@@ -10,8 +10,8 @@ angular.module('sorrirApp').controller('pacienteCtrl',function($scope,pacienteSe
 
 	$scope.cadastrar = function(paciente, form){
 		if(form.$valid){
-			$scope.paciente.dataCadastro = new Date();
-			pacienteService.cadastrarPaciente();
+			paciente.dataCadastro = new Date();
+			pacienteService.cadastrarPaciente(paciente);
 			$scope.paciente	= undefined;
 		}
 	}
