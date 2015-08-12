@@ -1,4 +1,5 @@
-angular.module("sorrirApp").config(function($routeProvider){
+'use strict';
+angular.module("sorrirApp").config(['$routeProvider',function($routeProvider){
 	$routeProvider.when("/pacientes",{
 		templateUrl : "view/pacientes.html",
 		controller : "pacienteCtrl"
@@ -15,4 +16,5 @@ angular.module("sorrirApp").config(function($routeProvider){
 	});
 
 	$routeProvider.otherwise({redirectTo: "/pacientes"});
-});
+
+}]);
